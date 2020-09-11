@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon1.png">
+    <title>Weather App</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1 align="center">Weather App</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li class="red">
+                    <a href="#">Coded by Maka10deka</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+</main>
+
+<section>
+    <div class="search">
+        <h2>Please enter details of your search</h2>
+            <input class="search-box" name="city" type="text" placeholder="Please enter the city">
+    </div>   
+</section>
+
+<hr>
+<section>
+    <div class="p-results">
+        <h1>Past Searches</h1>
+    </div>
+</section>
+<hr>
+
+<section>
+    <div class="results">
+        <h1><font color="red">Current</font> Search Results</h1>
+        <div class="result">
+                  
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="recent-searches">
+        <h2>Your location</h2>
+        <div class="recent-search">
+            <div class="bg2">
+                <h3>City</h3>
+                <p id="ls-city">New York</p>
+            </div>
+            <div class="bg1">
+                <h3>Rain</h3>
+                <p id="ls-rain">No rain expected</p>
+            </div>
+
+            <div class="bg2">
+                <h3>Humidity</h3>
+
+                <p id="ls-visibility">Low visibility</p>
+            </div>
+
+            <div class="bg1">
+                <h3>Wind</h3>
+
+                <p id="ls-wind">89 miles / hour</p>
+            </div>
+
+            <div class="bg2">
+                <h3>Max Temperature</h3>
+
+                <p id="ls-max-temp">116 F&deg;</p>
+            </div>
+            
+            <div class="bg1">
+                <h3>Min Temperature</h3>
+
+                <p  id="ls-min-temp">89 F&deg;</p>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>  
+<script defer src="app.js"></script>
+
+
+</body>
+</html>

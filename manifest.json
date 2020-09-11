@@ -1,0 +1,20 @@
+{
+    "name": "Free Weather App",
+    "short_name": "WeMap",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00A5CF",
+    "theme_color": "#ED217C",
+    "icons": [
+        {
+            "src": "/img/icon1.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/img/icon2.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        }
+    ]
+}
