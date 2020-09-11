@@ -1,5 +1,6 @@
 let searchbox = document.querySelector('.search-box')
 var key = "83016fd0bbca8249b18aa33eb1ce64ad"
+var cities = new Array()
 
 
 searchbox.addEventListener('keypress', setSearch);
@@ -30,10 +31,12 @@ const searchboxQuery =  (query) => {
             <h4 id="date">${weather.weather[0].description}</h4> 
             </div>`
             console.log(result)
+            cities.push(weather.id)
             document.querySelector('.result').innerHTML += result
             console.log(weather)
             if(typeof(Storage) !== "undefined"){
                 localStorage.setItem(weather.id, JSON.stringify(weather))
+                localStorage.setItem("cities", JSON.stringify(cities))
             }
             
     
@@ -78,16 +81,15 @@ fetch(api)
     })
 }
 
-
-
-
 if(navigator.serviceWorker){
 //   navigator.serviceWorker.register("sw.js");
 }
 
-    for(var i = 1000000; i < 9999999; i++){
-        if(localStorage.getItem(i)){
-            let weather = localStorage.getItem(i);
+var lscities = JSON.parse(localStorage.getItem("cities"))
+
+console.log(lscities)
+lscities.forEach(place =>{
+            var weather = localStorage.getItem(place);
             weather = JSON.parse(weather)
             console.log(weather)
             var result = `<div class="p-result">
@@ -98,9 +100,8 @@ if(navigator.serviceWorker){
             
             <hr>
             </div>`
-            console.log(i)
 
             document.querySelector('.p-results').innerHTML += result
-        }
-        }
+})
+
 
