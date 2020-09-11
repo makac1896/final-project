@@ -56,7 +56,7 @@ width: 98vw;
 }
 
 .bg1 {
-    background: url('https://unsplash.com/photos/deNAgNLr0b8');
+    background: #212F3D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +81,7 @@ width: 98vw;
 }
 
 .bg2 {
-    background: url('https://unsplash.com/photos/dVCGpKZB_E8');
+    background: #117A65;
     display: flex;
     flex-direction: column;
     align-items: center;
