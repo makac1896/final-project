@@ -196,9 +196,8 @@ span {
 
 @media screen and (max-width:412px){
 .recent-search {
-    display: inline;
     font-size: 1em; 
-    background-attachment: scroll;
+    width: 60%;
 }
 li {
     display: block;
