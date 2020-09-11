@@ -196,6 +196,7 @@ span {
 
 @media screen and (max-width:412px){
 .recent-search {
+    display: block;
     font-size: 1em; 
     width: 60%;
 }
