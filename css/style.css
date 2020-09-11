@@ -56,7 +56,7 @@ width: 98vw;
 }
 
 .bg1 {
-    background: #212F3D;
+    background: url('https://unsplash.com/photos/KIx_5ReSgIo') cover;
     display: flex;
     flex-direction: column;
     align-items: center;
