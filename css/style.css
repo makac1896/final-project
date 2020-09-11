@@ -144,7 +144,7 @@ nav{
     padding: 10px;
     margin: auto;
     opacity: 0.8;
-    width: 50%;
+    width: 80%;
     cursor: pointer;
     border-radius: 5%;
     box-shadow: #00A5CF;
@@ -194,7 +194,7 @@ span {
     padding: 5px;
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:412px){
 .recent-search {
     display: inline;
     font-size: 1em; 
