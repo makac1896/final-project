@@ -65,8 +65,8 @@ fetch(api)
         if(typeof(Storage) !== "undefined"){
             localStorage.setItem("currentLocation", JSON.stringify(weather))
         }
-        document.querySelector('#ls-min-temp').innerHTML = weather.list[Math.floor(Math.random()*40)].main.temp_min + " &deg;C"
-        document.querySelector('#ls-max-temp').innerHTML = weather.list[Math.floor(Math.random()*40)].main.temp_max + " &deg;C"
+        document.querySelector('#ls-max-temp').innerHTML = weather.list[Math.floor(Math.random()*40)].main.temp_min + " &deg;C"
+        document.querySelector('#ls-min-temp').innerHTML = weather.list[Math.floor(Math.random()*40)].main.temp_max + " &deg;C"
         document.querySelector('#ls-rain').innerHTML = weather.list[Math.floor(Math.random()*40)].weather[0].description
         document.querySelector('#ls-visibility').innerHTML = weather.list[Math.floor(Math.random()*40)].main.humidity + " %"
         document.querySelector('#ls-wind').innerHTML = weather.list[Math.floor(Math.random()*40)].wind.speed + " km /hr"
