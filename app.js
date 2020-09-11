@@ -32,7 +32,7 @@ const searchboxQuery =  (query) => {
             </div>`
             console.log(result)
             cities.push(weather.id)
-            document.querySelector('.result').innerHTML += result
+            document.querySelector('.resultx').innerHTML += result
             console.log(weather)
             if(typeof(Storage) !== "undefined"){
                 localStorage.setItem(weather.id, JSON.stringify(weather))
