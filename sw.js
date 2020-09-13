@@ -29,5 +29,4 @@ self.addEventListener('activate', evt =>{
 
 self.addEventListener('fetch', evt =>{
     evt.respondWith(fetch(evt.request).catch(()=> caches.match(e.request)))
-    )
 })
