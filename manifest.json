@@ -9,7 +9,12 @@
         {
             "src": "/img/icon1.svg",
             "type": "image/svg",
-            "sizes": "512x512"
+            "sizes": "512x512 192x192 72x72"
+        },
+        {
+            "src": "coffee-icon.png",
+            "type": "image/png",
+            "sizes": "144x144"
         }
     ]
 }
