@@ -15,8 +15,8 @@ self.addEventListener('install', evt => {
                     '/app.js',
                     '/img/bg1.jpg',
                     '/img/bg2.jpg',
-                    '/img/icon1.png',
-                    '/img/icon2.png'
+                    '/img/icon1.svg',
+                    '/coffee-icon.png'
                 ]
             )
         })
@@ -39,6 +39,6 @@ self.addEventListener('fetch', evt =>{
             //     return fetchRes;
             // })
             
-        }).catch(()=> caches.match('/fallback.html'))
+        })
     )
 })
