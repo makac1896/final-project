@@ -2,7 +2,7 @@
     "name": "Free Weather App",
     "short_name": "WeMap",
     "scope": ".",
-    "start_url": "/index.html",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#00A5CF",
     "theme_color": "#ED217C",
