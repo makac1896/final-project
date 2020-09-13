@@ -2,6 +2,9 @@ let searchbox = document.querySelector('.search-box')
 var key = "83016fd0bbca8249b18aa33eb1ce64ad"
 var cities = new Array()
 
+if(navigator.serviceWorker){
+   navigator.serviceWorker.register("sw.js");
+}
 
 searchbox.addEventListener('keypress', setSearch);
 
@@ -79,10 +82,6 @@ fetch(api)
     console.log(err)
 })
     })
-}
-
-if(navigator.serviceWorker){
-   navigator.serviceWorker.register("sw.js");
 }
 
 var lscities = JSON.parse(localStorage.getItem("cities"))
