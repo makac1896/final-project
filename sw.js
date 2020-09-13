@@ -16,6 +16,7 @@ self.addEventListener('install', evt => {
                     '/img/bg1.jpg',
                     '/img/bg2.jpg',
                     '/img/icon1.svg',
+                    '/calendar.png',
                     '/coffee-icon.png'
                 ]
             )
