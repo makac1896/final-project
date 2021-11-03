@@ -176,7 +176,6 @@ input[type="submit"]{
 }
 
 .p-results > .p-result{
-    background: linear-gradient(to bottom, white,rgb(32, 157, 189));
     border: 2px black solid;
     padding: 1em;
     border-radius: 0%;
